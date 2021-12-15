@@ -1,0 +1,148 @@
+@font-face {
+    font-family: "yekan";
+    src: url("fonts/Yekan.eot");
+    src: url("fonts/Yekan.eot?#iefix") format("embedded-opentype"), url("fonts/Yekan.woff") format("woff"), url("fonts/Yekan.ttf") format("truetype"), url("fonts/Yekan.svg#BYekan") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'yekan','Segoe UI', sans-serif, Tahoma;
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    html, body {
+        scroll-behavior: smooth;
+        height: 100%;
+    }
+
+    
+    body {
+        display: grid;
+        place-items: center;
+        text-align: center;
+        background: #dde1e7;
+    }
+
+    .content {
+        margin-top: -7%;
+        width: 400px;
+        background: #dde1e7;
+        border-radius: 10px;
+        padding: 40px 30px;
+        box-shadow: -3px -3px 8px #ffffff73,
+                    5px 5px 12px rgba(94, 104, 121, 0.288);
+    }
+
+    .content .text {
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 30px;
+        color: #000;
+    }
+
+    .content .field {
+        margin-top: 15px;
+        height: 50px;
+        width: 100%;
+        display: flex;
+        position: relative;
+    }
+      
+    .field input {
+        height: 100%;
+        width: 100%;
+        padding-right: 20px;
+        font-size: 18px;
+        outline: none;
+        border: none;
+        color: #595959;
+        background: #dde1e7;
+        border-radius: 25px;
+        direction: rtl;
+        box-shadow: inset 2px 2px 5px #babecc,
+                    inset -5px -5px 10px #ffffff73;
+    }
+
+    .field input:focus ~ label {
+        box-shadow: inset 2px 2px 5px #babecc,
+                    inset -1px -1px 2px #ffffff73;
+    }
+      
+    .field:nth-child(2) {
+        margin-top: 20px;
+    }
+      
+      .field span {
+        position: absolute;
+        width: 50px;
+        line-height: 50px;
+        color: #595959;
+    }
+      
+    .field label {
+        position: absolute;
+        top: 50%;
+        left: 45px;
+        pointer-events: none;
+        color: #666666;
+        transform: translateY(-50%);
+    }
+      
+    .field input:focus ~ label {
+        opacity: 0;
+    }
+
+    button {
+        margin: 25px 0 0 0;
+        width: 100%;
+        height: 50px;
+        color: #000;
+        font-size: 20px;
+        font-weight: 600;
+        background: #dde1e7;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        border-radius: 25px;
+        box-shadow: 3px 3px 6px #babecc,
+                    -5px -5px 10px #ffffff73;
+        transition: color 2s, box-shadow 2s;           
+    }
+      
+    button:hover {
+        color: #3498db;
+        box-shadow: inset 2px 2px 5px #babecc,
+                    inset -5px -5px 10px #ffffff73;
+    }
+
+    button:focus {
+        color: #3498db;
+        box-shadow: inset 2px 2px 5px #babecc,
+                    inset -5px -5px 10px #ffffff73;
+    }
+
+    .content  .forgot {
+        color: rgb(100, 100, 100);
+        margin-top: 35px;
+        font-size: 15px;
+    }
+
+    .content .forgot p {
+        margin-left: 12px;
+    }
+
+    .content a {
+        color: rgb(113, 125, 165);
+        text-decoration: none;
+    }
+
+    .content .signup-link {
+        margin-top: 10px;
+    }
+
+
